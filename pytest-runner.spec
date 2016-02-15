@@ -4,7 +4,7 @@
 #
 Name     : pytest-runner
 Version  : 2.5.1
-Release  : 8
+Release  : 9
 URL      : https://pypi.python.org/packages/source/p/pytest-runner/pytest-runner-2.5.1.zip
 Source0  : https://pypi.python.org/packages/source/p/pytest-runner/pytest-runner-2.5.1.zip
 Summary  : Invoke py.test as distutils command with dependency resolution.
