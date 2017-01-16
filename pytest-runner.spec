@@ -4,7 +4,7 @@
 #
 Name     : pytest-runner
 Version  : 2.5.1
-Release  : 16
+Release  : 17
 URL      : https://pypi.python.org/packages/source/p/pytest-runner/pytest-runner-2.5.1.zip
 Source0  : https://pypi.python.org/packages/source/p/pytest-runner/pytest-runner-2.5.1.zip
 Summary  : Invoke py.test as distutils command with dependency resolution.
@@ -36,13 +36,16 @@ python components for the pytest-runner package.
 %setup -q -n pytest-runner-2.5.1
 
 %build
+export LANG=C
+export SOURCE_DATE_EPOCH=1484566633
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
+export SOURCE_DATE_EPOCH=1484566633
 rm -rf %{buildroot}
-python2 setup.py build -b py2 install --root=%{buildroot}
-python3 setup.py build -b py3 install --root=%{buildroot}
+python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
+python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
 
 %files
 %defattr(-,root,root,-)
