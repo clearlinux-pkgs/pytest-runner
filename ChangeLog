@@ -1,3 +1,52 @@
+2.11.1
+~~~~~~
+
+* #28: Fix logic in marker evaluation.
+
+2.11
+~~~~
+
+* #27: Improved wording in the README around configuration
+  for the distutils command and pytest proper.
+
+2.10.1
+~~~~~~
+
+* #21: Avoid mutating dictionary keys during iteration.
+
+2.10
+~~~~
+
+* #20: Leverage technique in `setuptools 794
+  <https://github.com/pypa/setuptools/issues/794>`_
+  to populate PYTHONPATH during test runs such that
+  Python subprocesses will have a dependency context
+  comparable to the test runner.
+
+2.9
+~~~
+
+* Added Trove Classifier indicating this package is part
+  of the pytest framework.
+
+2.8
+~~~
+
+* #16: Added a license file, required for membership to
+  pytest-dev.
+* Releases are now made automatically by pushing a
+  tagged release that passes tests on Python 3.5.
+
+2.7
+~~~
+
+* Moved hosting to Github.
+
+2.6
+~~~
+
+* Add support for un-named, environment-specific extras.
+
 2.5.1
 ~~~~~
 
@@ -7,7 +56,7 @@
 ~~~
 
 * Moved hosting to `pytest-dev
-<https://bitbucket.org/pytest-dev/pytest-runner>`_.
+  <https://bitbucket.org/pytest-dev/pytest-runner>`_.
 
 2.4
 ~~~
