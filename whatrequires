@@ -1,6 +1,8 @@
 # This file contains recursive sources that require this package
 dask
 flake8
+keyring
 mccabe
 pylint
 scikit-image
+totem
