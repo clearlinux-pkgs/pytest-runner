@@ -4,7 +4,7 @@
 #
 Name     : pytest-runner
 Version  : 4.2
-Release  : 32
+Release  : 33
 URL      : https://pypi.debian.net/pytest-runner/pytest-runner-4.2.tar.gz
 Source0  : https://pypi.debian.net/pytest-runner/pytest-runner-4.2.tar.gz
 Summary  : Invoke py.test as distutils command with dependency resolution
