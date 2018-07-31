@@ -4,7 +4,7 @@
 #
 Name     : pytest-runner
 Version  : 4.2
-Release  : 38
+Release  : 39
 URL      : https://files.pythonhosted.org/packages/9e/b7/fe6e8f87f9a756fd06722216f1b6698ccba4d269eac6329d9f0c441d0f93/pytest-runner-4.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/9e/b7/fe6e8f87f9a756fd06722216f1b6698ccba4d269eac6329d9f0c441d0f93/pytest-runner-4.2.tar.gz
 Summary  : Invoke py.test as distutils command with dependency resolution
@@ -61,7 +61,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1532979424
+export SOURCE_DATE_EPOCH=1533001301
 python3 setup.py build -b py3
 
 %install
