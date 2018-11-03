@@ -4,17 +4,15 @@
 #
 Name     : pytest-runner
 Version  : 4.2
-Release  : 39
+Release  : 40
 URL      : https://files.pythonhosted.org/packages/9e/b7/fe6e8f87f9a756fd06722216f1b6698ccba4d269eac6329d9f0c441d0f93/pytest-runner-4.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/9e/b7/fe6e8f87f9a756fd06722216f1b6698ccba4d269eac6329d9f0c441d0f93/pytest-runner-4.2.tar.gz
 Summary  : Invoke py.test as distutils command with dependency resolution
 Group    : Development/Tools
 License  : MIT
-Requires: pytest-runner-python3
-Requires: pytest-runner-license
-Requires: pytest-runner-python
-Requires: Sphinx
-Requires: pytest
+Requires: pytest-runner-license = %{version}-%{release}
+Requires: pytest-runner-python = %{version}-%{release}
+Requires: pytest-runner-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
 BuildRequires : pluggy
 BuildRequires : py-python
@@ -38,7 +36,7 @@ license components for the pytest-runner package.
 %package python
 Summary: python components for the pytest-runner package.
 Group: Default
-Requires: pytest-runner-python3
+Requires: pytest-runner-python3 = %{version}-%{release}
 
 %description python
 python components for the pytest-runner package.
@@ -61,14 +59,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1533001301
-python3 setup.py build -b py3
+export SOURCE_DATE_EPOCH=1541271787
+python3 setup.py build
 
 %install
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/pytest-runner
-cp LICENSE %{buildroot}/usr/share/doc/pytest-runner/LICENSE
-python3 -tt setup.py build -b py3 install --root=%{buildroot}
+mkdir -p %{buildroot}/usr/share/package-licenses/pytest-runner
+cp LICENSE %{buildroot}/usr/share/package-licenses/pytest-runner/LICENSE
+python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
@@ -77,8 +75,8 @@ echo ----[ mark ]----
 %defattr(-,root,root,-)
 
 %files license
-%defattr(-,root,root,-)
-/usr/share/doc/pytest-runner/LICENSE
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/pytest-runner/LICENSE
 
 %files python
 %defattr(-,root,root,-)

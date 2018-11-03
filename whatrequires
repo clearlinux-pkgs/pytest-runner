@@ -1,7 +1,14 @@
 # This file contains recursive sources that require this package
+PyJWT
+aiohttp-cors
+astroid
 dask
 flake8
+idna-ssl
 mccabe
+paho-mqtt
+pyee
 pylint
-scikit-image
-totem
+pyrsistent
+smartcols
+yarl
