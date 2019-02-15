@@ -1,14 +1,16 @@
 # This file contains recursive sources that require this package
+Paste
 PyJWT
 aiohttp-cors
 astroid
 dask
-flake8
 idna-ssl
 mccabe
+numpy-stl
+onnx
 paho-mqtt
 pyee
 pylint
-pyrsistent
+python-utils
 smartcols
 yarl
