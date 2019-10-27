@@ -6,6 +6,7 @@ astroid
 dask
 idna-ssl
 mccabe
+mvn-arrow
 numpy-stl
 onnx
 paho-mqtt

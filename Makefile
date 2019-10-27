@@ -1,5 +1,5 @@
 PKG_NAME := pytest-runner
-URL = https://files.pythonhosted.org/packages/d9/6d/4b41a74b31720e25abd4799be72d54811da4b4d0233e38b75864dcc1f7ad/pytest-runner-5.1.tar.gz
+URL = https://files.pythonhosted.org/packages/5b/82/1462f86e6c3600f2471d5f552fcc31e39f17717023df4bab712b4a9db1b3/pytest-runner-5.2.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
