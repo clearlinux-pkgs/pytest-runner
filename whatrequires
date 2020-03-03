@@ -1,5 +1,4 @@
 # This file contains recursive sources that require this package
-Paste
 PyJWT
 aiohttp-cors
 astroid
@@ -12,6 +11,6 @@ onnx
 paho-mqtt
 pyee
 pylint
+pynvim
 python-utils
 smartcols
-yarl
