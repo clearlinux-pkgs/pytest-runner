@@ -1,16 +1,10 @@
 # This file contains recursive sources that require this package
 PyJWT
 aiohttp-cors
-astroid
 dask
 idna-ssl
+inkscape
 mccabe
-mvn-arrow
-numpy-stl
 onnx
-paho-mqtt
-pyee
-pylint
-pynvim
 python-utils
 smartcols
