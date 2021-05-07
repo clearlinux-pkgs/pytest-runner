@@ -4,7 +4,7 @@
 #
 Name     : pytest-runner
 Version  : 5.3.0
-Release  : 60
+Release  : 61
 URL      : https://files.pythonhosted.org/packages/62/6d/681466a726a851faf4a175d0d73675cc19470a31be414e7f46fc776027e5/pytest-runner-5.3.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/62/6d/681466a726a851faf4a175d0d73675cc19470a31be414e7f46fc776027e5/pytest-runner-5.3.0.tar.gz
 Summary  : Invoke py.test as distutils command with dependency resolution
